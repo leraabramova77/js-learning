@@ -44,8 +44,7 @@ rectangleAreaBtn.addEventListener("click", () => {
     rectangleAreaResult.textContent = rectangleSquare(length, width);
 });
 
-result2.textContent = square(side);
-;
+
 
 function rectanglePerimeter(length, width) {
     return 2 * (length + width);
@@ -60,13 +59,4 @@ rectanglePerimeterBtn.addEventListener("click", () => {
     const length = parseFloat(perimeterLengthInput.value);
     const width = parseFloat(perimeterWidthInput.value);
     rectanglePerimeterResult.textContent = rectanglePerimeter(length, width);
-});
-
-const widthInput = document.getElementById("widthInput");
-const rectangleAreaResult = document.getElementById("rectangleAreaResult");
-
-rectangleAreaBtn.addEventListener("click", () => {
-    const length = parseFloat(lengthInput.value);
-    const width = parseFloat(widthInput.value);
-    rectangleAreaResult.textContent = rectangleSquare(length, width);
 });
