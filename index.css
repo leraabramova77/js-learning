@@ -19,17 +19,19 @@ body {
 }
 
 .img-btn img {
-    width: 150px;
-    height: 100px;
+    width: 220px;
+    height: 150px;
     object-fit: cover;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; /* Плавность увеличения */
-    margin-top: -300px;
+    transition: transform 0.3s ease;
+    /* Плавность увеличения */
+
 }
 
 .img-btn:hover img {
-    transform: scale(1.05); /* Эффект увеличения при наведении */
+    transform: scale(1.05);
+    /* Эффект увеличения при наведении */
 }
 
 .text {
@@ -42,8 +44,90 @@ body {
     gap: 150px;
 }
 
-@media(max-width: 600px) {
+
+
+@media (max-width: 1000px) {
+    .text {
+        font-size: 32px;
+        padding: 0 15px;
+    }
+
     .choose {
         flex-direction: column;
+        gap: 30px;
+        height: auto;
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 30px;
     }
+
+    .img-btn img {
+        width: 280px;
+        height: 180px;
+        margin-top: 0;
+    }
+
+    .calculator {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.calculator {
+    width: 300px;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 25px;
+    background: white;
+    width: 90%;
+    max-width: 400px;
+}
+
+body {
+    background-image: url("assets/pink-detaild-background.jpg");
+}
+
+.calculate {
+    background-image: url("assets/calculate-light-pink.jpg");
+}
+
+.calculate {
+    width: 200px;
+    height: 70px;
+
+    background-image: url("assets/calculate-light-pink.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+    cursor: pointer;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    ;
 }
