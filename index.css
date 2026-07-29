@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 80vh;
+}
+
+.img-btn {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img-btn img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Плавность увеличения */
+    margin-top: -300px;
+}
+
+.img-btn:hover img {
+    transform: scale(1.05); /* Эффект увеличения при наведении */
+}
+
+.text {
+    font-size: 24px;
+    margin-top: 1px;
+}
+
+.choose {
+    display: flex;
+    gap: 150px;
+}
+
+@media(max-width: 600px) {
+    .choose {
+        flex-direction: column;
+    }
+}
