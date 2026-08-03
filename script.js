@@ -60,3 +60,29 @@ rectanglePerimeterBtn.addEventListener("click", () => {
     const width = parseFloat(perimeterWidthInput.value);
     rectanglePerimeterResult.textContent = rectanglePerimeter(length, width);
 });
+
+function circleArea(radius) {
+    return Math.PI * radius * radius;
+}
+
+const circleAreaBtn = document.getElementById("circleAreaBtn");
+const radiusInput = document.getElementById("radiusInput");
+const circleAreaResult = document.getElementById("circleAreaResult");
+
+circleAreaBtn.addEventListener("click", () => {
+    const radius = parseFloat(radiusInput.value);
+    circleAreaResult.textContent = circleArea(radius);
+});
+
+function circlePerimeter(radius) {
+    return 2 * Math.PI * radius;
+}
+
+const circlePerimeterBtn = document.getElementById("circlePerimeterBtn");
+const radiusInput2 = document.getElementById("radiusInput");
+const circlePerimeterResult = document.getElementById("circlePerimeterResult");
+
+circlePerimeterBtn.addEventListener("click", () => {
+    const radius = parseFloat(radiusInput2.value);
+    circlePerimeterResult.textContent = circlePerimeter(radius);
+});

@@ -8,67 +8,96 @@
 
 <body>
 
-    <body class="cat-page"></body>
+    <body class="cat-page">
+        <div class="calculator">
+            <h1 class="text">SQUARE</h1>
+            <h2 class="text">Square area calculator</h2>
 
-    <div class="calculator">
-        <h1 class="text">SQUARE</h1>
-        <h2 class="text">Square area calculator</h2>
+            <input class="input" id="numberInput" type="number" placeholder="Enter number">
 
-        <input class="input" id="numberInput" type="number" placeholder="Enter number">
+            <button id="calculateBtn" class="calculate"></button>
 
-        <button id="calculateBtn" class="calculate"></button>
+            <p id="result">Result:</p>
 
-        <p id="result">Result:</p>
+        </div>
+        <div class="calculator">
 
-    </div>
-    <div class="calculator">
+            <h2 class="text">Perimeter area calculator</h2>
 
-        <h2 class="text">Perimeter area calculator</h2>
+            <input class="input" id="sideInput" type="number" placeholder="Enter side length">
 
-        <input id="sideInput" type="number" placeholder="Enter side length">
+            <button id="btn2" class="calculate"></button>
 
-        <button id="btn2">Calculate</button>
+            <p id="result2">Result:</p>
 
-        <p id="result2">Result:</p>
-
-    </div>
-
-    <h1 class="text">RECTANGLE</h1>
-    <div class="calculator">
-
-        <h2 class="text">Square area calculator</h2>
-
-        <div class="inputs">
-            <input id="lengthInput" type="number" placeholder="Length">
-
-            <input id="widthInput" type="number" placeholder="Width">
         </div>
 
-        <button id="rectangleAreaBtn">Calculate</button>
+        <h1 class="text">RECTANGLE</h1>
+        <div class="calculator">
 
-        <p id="rectangleAreaResult">Result:</p>
+            <h2 class="text">Square area calculator</h2>
 
-    </div>
+            <div class="inputs">
+                <input id="lengthInput" type="number" placeholder="Length">
 
-    <div class="calculator">
+                <input id="widthInput" type="number" placeholder="Width">
+            </div>
 
-        <h2 class="text">Rectangle perimeter calculator</h2>
+            <button id="rectangleAreaBtn" class="calculate"></button>
 
-        <div class="inputs">
-            <input id="perimeterLength" type="number" placeholder="Length">
+            <p id="rectangleAreaResult">Result:</p>
 
-            <input id="perimeterWidth" type="number" placeholder="Width">
         </div>
 
-        <button id="rectanglePerimeterBtn">Calculate</button>
+        <div class="calculator">
 
-        <p id="rectanglePerimeterResult">Result:</p>
+            <h2 class="text">Rectangle perimeter calculator</h2>
 
-    </div>
+            <div class="inputs">
+                <input id="perimeterLength" type="number" placeholder="Length">
+
+                <input id="perimeterWidth" type="number" placeholder="Width">
+            </div>
+
+            <button id="rectanglePerimeterBtn" class="calculate"></button>
+
+            <p id="rectanglePerimeterResult">Result:</p>
+
+        </div>
 
 
 
-    <script src="script.js"></script>
-</body>
+        <div class="calculator">
+            <h1 class="text">CIRCLE</h1>
+            <h2 class="text">Circle area calculator</h2>
+
+            <div class="inputs">
+                <input id="radiusInput" type="number" placeholder="Radius">
+            </div>
+
+            <button id="circleAreaBtn" class="calculate"></button>
+
+            <p id="circleAreaResult">Result:</p>
+
+        </div>
+
+        <div class="calculator">
+
+            <h2 class="text">Circle perimeter calculator</h2>
+
+            <div class="inputs">
+                <input id="radiusInput" type="number" placeholder="Radius">
+            </div>
+
+            <button id="circlePerimeterBtn" class="calculate"></button>
+
+            <p id="circlePerimeterResult">Result:</p>
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
 
 </html>
