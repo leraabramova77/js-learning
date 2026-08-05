@@ -2,16 +2,9 @@ function qwerty(number) {
     return number * number;
 }
 
-
-const foo = (number) => { return number * number; };
-
 const result = document.getElementById("result");
 const numberInput = document.getElementById("numberInput");
 const calculateBtn = document.getElementById("calculateBtn");
-
-numberInput.addEventListener("change", () => {
-    console.log("Input changed to:", numberInput.value, typeof numberInput.value);
-});
 
 calculateBtn.addEventListener("click", () => {
     const number = parseFloat(numberInput.value);
@@ -43,8 +36,6 @@ rectangleAreaBtn.addEventListener("click", () => {
     const width = parseFloat(widthInput.value);
     rectangleAreaResult.textContent = rectangleSquare(length, width);
 });
-
-
 
 function rectanglePerimeter(length, width) {
     return 2 * (length + width);
@@ -79,7 +70,7 @@ function circlePerimeter(radius) {
 }
 
 const circlePerimeterBtn = document.getElementById("circlePerimeterBtn");
-const radiusInput2 = document.getElementById("radiusInput");
+const radiusInput2 = document.getElementById("radiusInput2");  // ИСПРАВЛЕНО!
 const circlePerimeterResult = document.getElementById("circlePerimeterResult");
 
 circlePerimeterBtn.addEventListener("click", () => {
